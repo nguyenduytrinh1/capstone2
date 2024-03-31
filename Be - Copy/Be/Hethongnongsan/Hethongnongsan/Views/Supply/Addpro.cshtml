@@ -1,0 +1,48 @@
+﻿@Model Hethongnongsan.Models.Nguoidung
+@{
+    ViewBag.Title = "Addpro";
+    Layout = "~/Views/Shared/Headerpage.cshtml";
+}
+<form action="/Supply/Addpro/@ViewBag.id " method="post" style="margin-top:100px" enctype="multipart/form-data">
+    <input type="hidden" name="Idshop" value="@Model.Idshop " />
+    <div>
+        <div>
+            <label>
+                Ten san pham
+            </label>
+            <input type="text" name="Tensanpham" />
+        </div>
+        <div>
+            <label>
+                Ten loai
+            </label>
+            <input type="text" name="Tenloai" />
+        </div>
+        <div>
+            <label>
+                Gioithieu
+            </label>
+            <input type="text" name="Gioithieu" />
+        </div>
+        <div>
+            <label>
+                Gia
+            </label>
+            <input type="text" name="Gia" />
+        </div>
+        <div>
+            <label>
+                Link anh
+            </label>
+            <input type="file" name="imageFile" />
+        </div>
+        <div>
+            <label>
+                Link anh
+            </label>
+            <input type="text" name="nameimg" />
+        </div>
+    </div>
+    <button type="submit">add</button>
+
+</form>

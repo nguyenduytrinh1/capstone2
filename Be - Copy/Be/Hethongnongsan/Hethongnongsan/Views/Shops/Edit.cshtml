@@ -1,0 +1,73 @@
+﻿@model Hethongnongsan.Models.Shop
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/Headerpage.cshtml";
+}
+
+<h2>Edit</h2>
+<form action="/Shops/Edit/@Model.Idshop" method="post" style="margin-top:100px">
+    <input type="hidden" name="Idshop" value="@Model.Idshop"/>
+    <div>
+        <div>
+            <label>
+                id chu so huu
+            </label>
+            <input type="text" name="Idchusohuu" value="@Model.Idchusohuu"/>
+        </div>
+        <div>
+            <label>
+                ten shop
+            </label>
+            <input type="text" name="Tenshop" value="@Model.Tenshop"/>
+        </div>
+        <div>
+            <label>
+                ngay thanh lap
+            </label>
+            <input type="text" name="Ngaythanhlap" value="@Model.Ngaythanhlap"/>
+        </div>
+        <div>
+            <label>
+                gioi thieu
+            </label>
+            <input type="text" name="Gioithieu" value="@Model.Gioithieu"/>
+        </div>
+        <div>
+            <label>
+                lo go
+            </label>
+            <input type="text" name="Logo" value="@Model.Logo"/>
+        </div>
+        <div>
+            <label>
+                dia chi
+            </label>
+            <input type="text" name="Diachi" value="@Model.Diachi"/>
+        </div>
+        <div>
+            <label>
+                sdt
+            </label>
+            <input type="text" name="Sdt" value="@Model.Sdt"/>
+        </div>
+        <div>
+            <label>
+                email
+            </label>
+            <input type="text" name="Email" value="@Model.Email"/>
+        </div>
+        <div>
+            <label>
+                face
+            </label>
+            <input type="text" name="Facebook" value="@Model.Facebook"/>
+        </div>
+        <div>
+            <label>
+                ins
+            </label>
+            <input type="text" name="Instagram" value="@Model.Instagram"/>
+        </div>
+    </div>
+    <button type="submit">edit</button>
+</form>

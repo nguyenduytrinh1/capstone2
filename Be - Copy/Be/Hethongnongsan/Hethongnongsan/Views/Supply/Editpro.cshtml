@@ -1,0 +1,44 @@
+﻿@model Hethongnongsan.Models.Sanpham
+@{
+    ViewBag.Title = "Editpro";
+    Layout = "~/Views/Shared/Headerpage.cshtml";
+}
+
+
+<form action="/Supply/Editpro/@Model.Idsanpham " method="post" style="margin-top:100px">
+    <input type="hidden" name="Idshop" value="@Model.Idshop " />
+    <input type="hidden" name="Idsanpham" value="@Model.Idsanpham " />
+    <div>
+        <div>
+            <label>
+                Ten san pham
+            </label>
+            <input type="text" name="Tensanpham" value="@Model.Tensanpham" />
+        </div>
+        <div>
+            <label>
+                Ten loai
+            </label>
+            <input type="text" name="Tenloai" value="@Model.Tenloai" />
+        </div>
+        <div>
+            <label>
+                Gioithieu
+            </label>
+            <input type="text" name="Gioithieu" value="@Model.Gioithieu" />
+        </div>
+        <div>
+            <label>
+                Gia
+            </label>
+            <input type="text" name="Gia" value="@Model.Gia" />
+        </div>
+        <div>
+            <label>
+                Link anh
+            </label>
+            <input type="file" name="Linkhinhanh"/>
+        </div>
+    </div>
+    <button type="submit">edit</button>
+</form>
